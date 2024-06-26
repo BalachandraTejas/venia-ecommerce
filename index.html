@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VENIA - shopping</title>
+    <link rel="stylesheet" href="./main.css" />
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/cmu8xtp.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">VENIA</div>
+        <div class="nav-menu hide-sm">
+          <ul>
+            <li><a class="active" href="/">Home</a></li>
+            <li><a href="/">Women</a></li>
+            <li><a href="/">Men</a></li>
+            <li><a href="/">Smart Gear</a></li>
+            <li><a href="/">Accessories</a></li>
+          </ul>
+        </div>
+        <div class="cart hide-sm"></div>
+      </div>
+    </nav>
+    <header>
+      <div class="header-text-container">
+        <div>
+          <div>Men's Outerwear</div>
+          <div class="text-container_highlight"></div>
+        </div>
+      </div>
+      <div class="hero-img"></div>
+    </header>
+    <main>
+      <aside>
+        <div class="breadcrumbs">
+          Clothing / Women’s /
+          <span class="selected-breadcrumb">Outerwear</span>
+        </div>
+        <div class="filters hide-sm">
+          <div class="filters-heading">Filters</div>
+          <div class="filter-categories">
+            <div class="categories-heading">Categories</div>
+            <input
+              type="checkbox"
+              id="jewelery"
+              name="jewelery"
+              value="jewelery"
+              onchange="handleCheckbox(value)"
+            />
+            <label for="jewellery"> Jewellery</label><br />
+            <input
+              type="checkbox"
+              id="electronics"
+              name="electronics"
+              value="electronics"
+              onchange="handleCheckbox(value)"
+            />
+            <label for="electronics"> Electronics</label><br />
+            <input
+              type="checkbox"
+              id="mensclothing"
+              name="mensclothing"
+              value="men's clothing"
+              onchange="handleCheckbox(value)"
+            />
+            <label for="mensclothing"> Men's Clothing</label><br />
+            <input
+              type="checkbox"
+              id="womensclothing"
+              name="womensclothing"
+              value="women's clothing"
+              onchange="handleCheckbox(value)"
+            />
+            <label for="womensclothing"> Women's clothing</label><br />
+          </div>
+        </div>
+      </aside>
+      <section>
+        <div class="product-header">
+          <div id="display-count"></div>
+          <select name="sort" id="sort" onchange="handleSort(value)">
+            <option value="none">None</option>
+            <option value="asc">Sort by Price - Low to high</option>
+            <option value="desc">Sort by Price - High to low</option>
+          </select>
+        </div>
+        <div class="list-products"></div>
+        <div class="load-more">
+          <a href="#" id="loadMore">Load More</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="footer-links-section">
+        <div class="footer-links">
+          <div>
+            <ul>
+              <li class="footer-link-header">Account</li>
+              <li>Sign In</li>
+              <li>Register</li>
+              <li>Order Status</li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li class="footer-link-header">About Us</li>
+              <li>Our Story</li>
+              <li>Careers</li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li class="footer-link-header">Help</li>
+              <li>Contact Us</li>
+              <li>Order Status</li>
+              <li>Returns</li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li class="footer-link-header">Follow Us!</li>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="footer-addr-section">
+        <div class="footer-addr">
+          <div class="logo">VENIA</div>
+          <div>&copy;Company Name Address Ave, City Name, State ZIP</div>
+          <div class="terms-policy">
+            <span>Terms of Use</span>&nbsp;&nbsp;
+            <span>Privacy Policy</span>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
